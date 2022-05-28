@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/functions": "^1.0.0",
+    "axios": "^0.27.2",
     "next": "12.1.6",
+    "node-cmd": "^5.0.0",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
